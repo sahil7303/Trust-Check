@@ -1,0 +1,8 @@
+dnspython
+pandas
+urllib3
+tldextract
+requests
+beautifulsoup4
+python-whois
+seaborn
