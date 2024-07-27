@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Checker</title>
+</head>
+<body>
+    <h1>Phishing Checker</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Check URL</button>
+    </form>
+
+    {% if result is not None %}
+        <h2>Result: {{ result }}</h2>
+        <p>{% if result == 0 %}The URL is legitimate.{% else %}The URL is phishing.{% endif %}</p>
+    {% endif %}
+</body>
+</html>

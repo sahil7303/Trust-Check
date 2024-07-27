@@ -1,0 +1,41 @@
+/* popup.css */
+body {
+    width: 300px;
+    height: 200px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#status {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#status.legitimate {
+    color: #2e7d32; /* Green */
+    border-color: #2e7d32;
+    background-color: #e8f5e9; /* Light green */
+}
+
+#status.phishing {
+    color: #c62828; /* Red */
+    border-color: #c62828;
+    background-color: #ffebee; /* Light red */
+}
