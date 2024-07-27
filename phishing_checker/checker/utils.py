@@ -1,4 +1,4 @@
-import feature_extractor as fe
+from . import feature_extractor as fe
 import xgboost as xgb
 import pickle
 import numpy as np
@@ -14,6 +14,8 @@ def get_phishing_status(url):
 
     # Extract features from the URL
     datapoint = fe.extract_features(url)
+    if datapoint is None :
+        return 1
     datapoint = datapoint[1:]  # Adjust if necessary
 
     # Convert datapoint to numpy array and ensure it is numeric
