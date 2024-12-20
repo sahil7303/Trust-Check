@@ -9,7 +9,7 @@ warnings.filterwarnings('ignore')
 
 def get_phishing_status(url):
     # Load the model from the file
-    with open('/home/harsh-patel/Desktop/projects/phishing_detection_chrome_extension/scripts/xgboost_model.pkl', 'rb') as file:
+    with open('../scripts/xgboost_model.pkl', 'rb') as file:
         model = pickle.load(file)
 
     # Extract features from the URL
@@ -21,7 +21,7 @@ def get_phishing_status(url):
 
     # Load the fitted scaler from the file
     try:
-        with open('/home/harsh-patel/Desktop/projects/phishing_detection_chrome_extension/scripts/scaler.pkl', 'rb') as f:
+        with open('../scripts/scaler.pkl', 'rb') as f:
             sc = pickle.load(f)
     except FileNotFoundError as e:
         raise FileNotFoundError(f"Scaler file not found: {e}")

@@ -4,7 +4,7 @@ Trust check is a chrome extension that can be used to check the currently opened
 <img src="https://github.com/user-attachments/assets/b00207cf-dd5d-47c1-a418-8e8d7745ca6b" width="850">
 
 ### Dependencies 
-- `git clone git@github.com:patelharsh21/Trust-Check.git`
+- `Clone the Repository`
 - `conda create --name trust_check python`
 - `pip install -r requirements.txt`
 ### Run backend 
